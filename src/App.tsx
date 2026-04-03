@@ -21,13 +21,6 @@ const App = () => {
   const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState<string | null>(null)
 
-  /*
-  const [watched, setWatched] = useState<WatchData[]>(() => {
-    const storedValue: string | null = localStorage.getItem('watched')
-
-    if (storedValue) return JSON.parse(storedValue)
-  })*/
-
   const [watched, setWatched] = useLocalStorageState([], 'watched')
 
   const handleSelectMovie = (id: string) => {

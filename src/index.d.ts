@@ -12,7 +12,6 @@ export type WatchData = {
   Poster: string
   runtime: number
   imdbRating: number
-  imdbRating: number
   userRating: number
 }
 
@@ -24,7 +23,7 @@ export type MovieDetailData = {
   imdbRating: number
   Plot: string
   Released: string
-  Actors: string[]
+  Actors: string
   Director: string
   Genre: string
 }

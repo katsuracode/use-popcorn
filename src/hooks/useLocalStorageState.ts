@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
 import type { WatchData } from '..'
 
-export const useLocalStorageState = (initialState: string[], key: string) => {
+export const useLocalStorageState = (
+  initialState: WatchData[],
+  key: string,
+) => {
   const [value, setValue] = useState<WatchData[]>(() => {
     const storedValue: string | null = localStorage.getItem(key)
 

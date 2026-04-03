@@ -17,7 +17,7 @@ const textStyle = {
 }
 
 type StarRatingProps = {
-  maxRating: number
+  maxRating?: number
   onSetRating: (rateNum: number) => void
   color?: string
   size?: number
